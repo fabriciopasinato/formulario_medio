@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="cont/style/style.css">
+</head>
+<body>
+	<form action="" method="POST" id="form">
+		<div class="form">
+			<h1>Configurar un enlace de URL corta</h1>
+			<div class="grupo">
+				<input type="text" name="" id="url" required=""><span class="barra"></span>
+				<label for="">URL</label>
+			</div>
+			<h1>Configurar el enlace dinámico</h1>
+			<div class="grupo">
+				<input type="text" name="" id="urldinamic" required=""><span class="barra"></span>
+				<label for="">URL de enlace profundo </label>
+			</div>
+			<div class="grupo">
+				<input type="text" name="" id="enlacedinamic" required=""><span class="barra"></span>
+				<label for="">Nombre de enlace dinámico</label>
+			</div>
+			<h1>Definir el comportamiento del enlace en Android</h1>
+			<div >
+				<input type="radio" name="comp-android" value="navegador" id="radiob" required="">
+				<p id="tbr">Abrir en navegador</p>
+				<input type="radio" name="comp-android" value="Android" id="radiob" required="">
+				<p id="tbr">Abrir en Android</p>
+			</div>
+			<h1>Definir el comportamiento del enlace en IOS</h1>
+			<div >
+				<input type="radio" name="comp-IOS" value="navegador" id="radiob" required="">
+				<p id="tbr">Abrir en navegador</p>
+				<input type="radio" name="comp-IOS" value="IOS" id="radiob" required="">
+				<p id="tbr">Abrir en IOS</p>
+			</div>
+			<h1>Opciones avanzadas</h1>
+			<h3>Añade metaetiquetas de redes sociales</h3>
+			<div class="grupo">
+				<input type="text" name="" id="tvista" required=""><span class="barra"></span>
+				<label for="">Título de la vista previa</label>
+			</div>
+			<div class="grupo">
+				<input type="text" name="" id="urlvista" required=""><span class="barra"></span>
+				<label for="">URL de la imagen de vista previa</label>
+			</div>
+			<div class="grupo">
+				<input type="text" name="" id="desvista" required=""><span class="barra"></span>
+				<label for="">Descripcion de la vista previa</label>
+			</div>
+			<h3>Realiza el seguimiento de una campaña con parámetros UTM</h3>
+			<div class="grupo">
+				<input type="text" name="" id="fcampaña" required=""><span class="barra"></span>
+				<label for="">Fuente de Campaña</label>
+			</div>
+			<div class="grupo">
+				<input type="text" name="" id="mcampaña" required=""><span class="barra"></span>
+				<label for="">Medio de Campaña</label>
+			</div>
+			<div class="grupo">
+				<input type="text" name="" id="ncampaña" required=""><span class="barra"></span>
+				<label for="">Nombre de Campaña</label>
+			</div>
+		</div>
+		<button type="submit">Crear</button>
+		<p class="warnings" id="warnings"></p>
+	</form>
+	<script src="cont/js/app.js"></script>
+</body>
+</html>
